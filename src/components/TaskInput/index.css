@@ -12,7 +12,7 @@
     background-color: transparent;
     border: none;
     outline: none;
-    padding: 16px;
+    padding: 20px;
     flex-grow: 1;
 }
 
@@ -21,3 +21,21 @@
     font-size: 3rem;
     cursor: pointer;
 }
+
+@media (max-width: 767px) {
+    .task-input-container {
+        width: 100%;
+    }
+  }
+  
+  @media (min-width: 768px) and (max-width: 1023px) {
+    .task-input-container {
+        width: 60%;
+    }
+  }
+  
+  @media (min-width: 1024px) {
+    .task-input-container {
+        width: 40%;
+    }
+  }

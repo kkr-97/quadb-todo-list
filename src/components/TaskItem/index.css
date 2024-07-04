@@ -89,7 +89,7 @@
 /* Mobile: Single item per row */
 @media (max-width: 767px) {
   .task-item {
-      width: 90%;
+      width: 100%;
   }
 }
 
