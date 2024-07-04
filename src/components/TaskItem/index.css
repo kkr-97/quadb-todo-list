@@ -1,91 +1,108 @@
 .task-item {
-    display: flex;
-    align-items: center;
-    background-color: #fff;
-    padding: 10px;
-    border-radius: 5px;
-    margin: 2%;
-    width: 50%;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    transition: transform 0.2s, box-shadow 0.2s;
-  }
-  
-  .task-item:hover {
-    transform: translateY(-3px);
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-  }
-  
-  .task-input {
-    flex: 1;
-    padding: 12px;
-    border: none;
-    border-radius: 5px;
-    margin-right: 10px;
-    outline: none;
-    margin: 0;
-  }
+  display: flex;
+  align-items: center;
+  background-color: #fff;
+  padding: 10px;
+  border-radius: 5px;
+  margin: 1%;
+  width: 22%;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s, box-shadow 0.2s;
+}
 
-  .task-input{
-    outline: auto;
-  }
-  
-  .task-text {
-    flex: 1;
-    margin: 0;
-    font-size: 16px;
-  }
-  
-  .task-text.completed {
-    text-decoration: line-through;
-    color: #888;
-  }
+.task-item:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
 
-  .check-btn{
-    margin-right: 6px;
-    margin-top: 3px;
-    cursor: pointer;
-    font-size: 18px;
-    color: #915e05;
-  }
+.task-input {
+  flex: 1;
+  padding: 12px;
+  border: none;
+  border-radius: 5px;
+  outline: none;
+  margin: 0;
+}
 
-  .checked{
-    color:lime;
-    font-size: 18px;
-  }
+.task-text {
+  flex: 1;
+  margin: 0;
+  font-size: 16px;
+}
 
-  .btn{
-    transition: background-color 0.2s;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  
-  .task-button {
-    color: #f0ad4e;
-    border: none;
-    font-size: 22px;
-    background-color: white;
-    border-radius: 5px;
-    cursor: pointer;
-    margin-left: 10px;
-  }
+.task-text.completed {
+  text-decoration: line-through;
+  color: #888;
+}
 
-  .save-btn{
-    font-size: 16px;
+.check-btn {
+  margin-right: 6px;
+  margin-top: 3px;
+  cursor: pointer;
+  font-size: 18px;
+  color: #915e05;
+}
+
+.checked {
+  color: lime;
+  font-size: 18px;
+}
+
+.btn {
+  transition: background-color 0.2s;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.task-button {
+  color: #f0ad4e;
+  border: none;
+  font-size: 22px;
+  background-color: white;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-left: 10px;
+}
+
+.save-btn {
+  font-size: 16px;
+}
+
+.task-button:hover {
+  color: #ec971f;
+}
+
+.task-button:focus {
+  outline: none;
+}
+
+.delete-button {
+  background-color: white;
+  color: #915e05;
+  font-size: 2rem;
+  border: none;
+  cursor: pointer;
+}
+
+
+/* Mobile: Single item per row */
+@media (max-width: 767px) {
+  .task-item {
+      width: 90%;
   }
-  
-  .task-button:hover {
-    color: #ec971f;
+}
+
+/* Tablet: Two items per row */
+@media (min-width: 768px) and (max-width: 1023px) {
+  .task-item {
+      width: 45%;
   }
-  
-  .task-button:focus {
-    outline: none;
+}
+
+/* Laptop: Four items per row */
+@media (min-width: 1024px) {
+  .task-item {
+      width: 22%;
   }
-  
-  .delete-button{
-    background-color: white;
-    color: #915e05;
-    font-size: 2rem;
-    border: none;
-    cursor: pointer;
-  }
+}
