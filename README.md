@@ -8,10 +8,10 @@ This is a simple To-Do application built with ReactJS. It allows users to add, v
 - View the list of tasks
 - Edit a task
 - Delete a task
-- Optional: Mark tasks as completed
+- Mark tasks as completed
 
 ## Setup Instructions
 1. Clone the repository:
    ```bash
-   git clone https://github.com/yourusername/todo-app.git
-   cd todo-app
+   git clone https://github.com/kkr-97/quadb-todo-list.git
+   cd quadb-todo-list
