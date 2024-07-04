@@ -1,0 +1,8 @@
+.tasks-list{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: wrap;
+    list-style-type: none;
+    width: 90%;
+}

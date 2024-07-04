@@ -1,0 +1,23 @@
+.task-input-container{
+    background-color: white;
+    border: 1px solid #e6e6e6;
+    border-radius: 5px;
+    margin: 14px 0 14px 0;
+    width: 30%;
+    display: flex;
+    align-items: center;
+}
+
+.task-input-element{
+    background-color: transparent;
+    border: none;
+    outline: none;
+    padding: 16px;
+    flex-grow: 1;
+}
+
+.add-task-btn{
+    color: #915e05;
+    font-size: 3rem;
+    cursor: pointer;
+}
